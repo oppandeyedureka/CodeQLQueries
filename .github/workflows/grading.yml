@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          config-file: .github/codeql/config.yml
+    
       - name: Grade exercise-reference-a-codeql-query activity
         id: events
         uses: ./.github/actions/local-action
