@@ -15,7 +15,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
-          config-file: .github/codeql/config.yml
+          config-file: .github/codeql/codeql-config.yml
     
       - name: Grade exercise-reference-a-codeql-query activity
         id: events
